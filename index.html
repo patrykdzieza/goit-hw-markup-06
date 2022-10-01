@@ -359,54 +359,98 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <div class="modal__button">
-        <button type="button" class="modal__close-button" data-modal-close>
-          <svg width="11px" height="11px"> 
-            <use href="./images/icons.svg#icon-close">
-          </svg>
-        </button>
-        </div>
-        <div class="modal__form-container">
-         <form class="modal__contact-form">
-          <label for="client-name"> Imie</label>
-          <div class="modal__contact-form__input-container">
-            <div class="modal__contact-form__icon">
-              <svg width="12px" height="12px">
-                <use href="./images/icons.svg#icon-person-modal">
-              </svg>
-            </div>
-          <input class="modal__contact-form__input-field" type="text" name="name" id="client-name">
-          
-        </div>
-          <label for="client-phone-number"> Telefon</label>
-          <div class="modal__contact-form__input-container">
-            <div class="modal__contact-form__icon">
-              <svg width="12px" height="12px">
-                <use href="./images/icons.svg#icon-phone-modal">
-              </svg>
-            </div>
-          <input class="modal__contact-form__input-field" type="tel" name="client-phone-number" id="client-phone-number">
-          
-        </div>
-          <label for="client-email"> Imie</label>
-          <div class="modal__contact-form__input-container">
-            <div class="modal__contact-form__icon">
-              <svg width="12px" height="12px">
-                <use href="./images/icons.svg#icon-mail-modal">
-              </svg>
-            </div>
-          <input class="modal__contact-form__input-field" type="email" name="client-email" id="client-email">   
-
-        </div>
-          <label for="client-comment"> Komentarz</label>
-          <div class="modal__contact-form__input-container ">
-          <textarea class="modal__contact-form__input-field modal__contact-form__input-field--comment" name="client-comment" id="client-comment" rows="5"> </textarea>
+          <button type="button" class="modal__close-button" data-modal-close>
+            <svg width="11px" height="11px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
         </div>
 
-         </form>
-        </div>
+        <div class="modal__contact-form">
+          <h2 class="contact-form__header">Zostaw swoje dane w formularzu poniżej</h2>
+          <form class="contact-form">
+            <!-- Input Field -->
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="client-name"> Imię</label>
+              <div class="contact-form__input-field__container">
+                <div class="contact-form__input-field__icon">
+                  <svg width="12px" height="12px">
+                    <use href="./images/icons.svg#icon-person-modal"></use>
+                  </svg>
+                </div>
+                <input
+                  class="contact-form__input-field"
+                  type="text"
+                  name="client-name"
+                  id="client-name"
+                />
+              </div>
+            </div>
+            <!-- Input Field End -->
+
+            <!-- Input Field -->
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="client-phone-number"> Telefon</label>
+              <div class="contact-form__input-field__container">
+                <div class="contact-form__input-field__icon">
+                  <svg width="12px" height="12px">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                </div>
+                <input
+                  class="contact-form__input-field"
+                  type="tel"
+                  name="client-phone-number"
+                  id="client-phone-number"
+                />
+              </div>
+            </div>
+            <!-- Input Field End -->
+
+            <!-- Input Field -->
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="client-email"> E-mail</label>
+              <div class="contact-form__input-field__container">
+                <div class="contact-form__input-field__icon">
+                  <svg width="12px" height="12px">
+                    <use href="./images/icons.svg#icon-mail-modal"></use>
+                  </svg>
+                </div>
+                <input
+                  class="contact-form__input-field"
+                  type="email"
+                  name="client-email"
+                  id="client-email"
+                />
+              </div>
+            </div>
+            <!-- Input Field End -->
+
+            <!-- Input Field Comment-->
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="client-comment"> Komentarz</label>
+              <div class="contact-form__input-field__container">
+                <textarea
+                  class="contact-form__input-field contact-form__input-field--comment"
+                  name="client-comment"
+                  id="client-comment"
+                  rows="5" placeholder="Wprowadź tekst"
+                >
+                </textarea>
+              </div>
+            </div>
+            <!-- Input Field End -->
+          </form>
+        <!-- <div class="modal__terms__container">
+          <div class="modal__terms__icon">
+
+          </div>
+          Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+        </div> -->
+      </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
