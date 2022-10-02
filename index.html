@@ -2,7 +2,7 @@
 <html lang="pl-PL">
   <head>
     <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -359,7 +359,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal__button">
           <button type="button" class="modal__close-button" data-modal-close>
@@ -376,11 +376,11 @@
             <div class="contact-form__item">
               <label class="contact-form__label" for="client-name"> Imię</label>
               <div class="contact-form__input-field__container">
-                <div class="contact-form__input-field__icon">
-                  <svg width="12px" height="12px">
-                    <use href="./images/icons.svg#icon-person-modal"></use>
-                  </svg>
-                </div>
+                <!-- <div class="contact-form__input-field__icon"> -->
+                <svg class="contact-form__input-field__icon" width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-person-modal"></use>
+                </svg>
+                <!-- </div> -->
                 <input
                   class="contact-form__input-field"
                   type="text"
@@ -437,20 +437,39 @@
                   class="contact-form__input-field contact-form__input-field--comment"
                   name="client-comment"
                   id="client-comment"
-                  rows="5" placeholder="Wprowadź tekst"
+                  rows="3"
+                  placeholder="Wprowadź tekst"
                 >
                 </textarea>
               </div>
             </div>
             <!-- Input Field End -->
           </form>
-        <!-- <div class="modal__terms__container">
-          <div class="modal__terms__icon">
 
+        </div>
+
+        <div class="modal__terms__container">
+        <div class="modal__terms__content">
+          <!-- Terms and Conditions -->
+          <label for="checkbox-1"
+            ><p class="terms__text">
+              Oświadczam iż akceptuję
+              <span class="terms__text terms__text--underline"> Regulamin</span> i
+              <span class="terms__text terms__text--underline">Politykę Prywatności.</span>
+            </p>
+          </label>
+          <div class="check">
+            <input class="checkbox" id="checkbox-1" name="checkbox" type="checkbox" />
+            <svg class="check-icon" width="11px" height="8px">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
           </div>
-          Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
-        </div> -->
-      </div>
+        </div>
+         <!-- Terms and Conditions END -->
+        <button class="button__primary button__primary--contact-form" type="submit">
+          Wyślij
+        </button>
+        
       </div>
     </div>
     <script src="./js/modal.js"></script>
