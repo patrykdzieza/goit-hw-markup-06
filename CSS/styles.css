@@ -248,18 +248,22 @@ p {
 
 /* -- INDEX.HTML STYLES -- */
 
-.hero__container--background {
-  background-color: var(--dark-background);
+.header-img {
+  display: flex;
+  z-index: 0;
 }
+
 .hero__container {
   z-index: 99;
   display: flex;
   justify-content: center;
+  background-image: url('../images/header.png');
+  background-color: rgba(47, 48, 58, 0.4);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-.header-img {
-  display: flex;
-  z-index: 0;
+.hero__container--background {
+  background-color: var(--dark-background);
 }
 .hero__title {
   color: var(--white);
@@ -272,12 +276,9 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-basis: 616px;
-  padding: 200px 455px 200px 455px;
+  flex-basis: 600px;
+  padding: 200px 0px 200px 0px;
   gap: 30px;
-  background-image: url('../images/header.png');
-  background-color: rgba(47, 48, 58, 0.4);
-  background-repeat: no-repeat;
 }
 
 .section__filters {
