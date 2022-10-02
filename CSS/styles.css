@@ -202,6 +202,30 @@ p {
   padding: 10px 43px 10px 43px;
   border-radius: 4px;
 }
+.button__primary:hover {
+  background-color: #006fc7;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__primary--newsletter {
+  display: flex;
+  padding-left: 42px;
+  padding-right: 28px;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--white);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  fill: var(--white);
+}
 .button__primary--bold-text {
   font-weight: var(--bold);
   font-size: 16px;
@@ -524,7 +548,7 @@ p {
   color: var(--white);
 }
 
-.footer-social-links__container {
+.footer__item--center {
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -535,6 +559,12 @@ p {
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+.footer-newsletter__content {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 .icon-clients {
   border: 1px solid #afb1b8;
@@ -690,6 +720,32 @@ p {
   transition: var(--transition-cubic);
 }
 
+.footer__input-field {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--dark-background);
+}
+
+.footer__input-field__placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__input-field:focus-within,
+.footer__input-field:hover {
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  outline: var(--blue);
+  transition: var(--transition-cubic);
+}
+
 .contact-form__label {
   font-size: 12px;
   font-weight: 400;
@@ -698,7 +754,7 @@ p {
   letter-spacing: 0.01em;
 }
 .contact-form__input-field--comment {
-  height: 110px;
+  height: 120px;
   padding-left: 10px;
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
@@ -727,9 +783,9 @@ p {
 .contact-form__input-field__icon {
   position: absolute;
   z-index: 1;
-
   padding-left: 15px;
 }
+
 input[type='checkbox'] {
   appearance: none;
 }
