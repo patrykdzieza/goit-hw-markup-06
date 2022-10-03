@@ -895,4 +895,8 @@ input:checked {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.terms__text--underline:hover {
+  color: #006fc7;
+  transition: var(--transition-cubic);
+}
 /* -- Contact Form in Modal --*/
