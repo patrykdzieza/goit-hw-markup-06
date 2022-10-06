@@ -896,7 +896,7 @@ input:checked {
 }
 
 .terms__text--underline:hover {
-  color: #006fc7;
+  color: #2f303a;
   transition: var(--transition-cubic);
 }
 /* -- Contact Form in Modal --*/
